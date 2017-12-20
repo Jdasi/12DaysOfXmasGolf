@@ -12,7 +12,7 @@ int main()
 
         for (int j=i;j>=0;--j)
         {
-            if(j==0&&i>0)c"and ";
+            if(!j&i)c"and ";
 
             c g[j];
 
