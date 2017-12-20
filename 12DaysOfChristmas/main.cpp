@@ -1,23 +1,25 @@
-#include <iostream>
+#include<iostream>
+#define c std::cout <<
 
 int main()
 {
-    char *n[] { "First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth", "Ninth", "Tenth", "Eleventh", "Twelveth" };
-    char *s[] { "On the ", " day of Christmas my true love sent to me\n" };
-    char *g[] { "a Partridge in a Pear Tree.\n" , "Two Turtle Doves\n", "Three French Hens,\n", "Four Calling Birds,\n", "Five Gold Rings,\n", "Geese a-Laying,\n", "Seven Swans a-Swimming,\n", "Eight Maids a-Milking,\n", "Ladies Dancing,\n", "Lords a-Leaping,\n", "Pipers Piping,\n", "Drummers Drumming,\n" };
+    char*n[]{"First","Second","Third","Fourth","Fifth","Sixth","Seventh","Eighth","Ninth","Tenth","Eleventh","Twelveth"};
+    char*s[]{"On the "," day of Christmas my true love sent to me\n"};
+    char*g[]{"a Partridge in a Pear Tree.\n","Two Turtle Doves\n","Three French Hens,\n","Four Calling Birds,\n","Five Gold Rings,\n","Six Geese a-Lay","Seven Swans a-Swimm","Eight Maids a-Milk","Nine Ladies Danc","Ten Lords a-Leap","Eleven Pipers Pip","Twelve Drummers Drumm"};
 
-    for (int i = 0; i < 12; ++i)
+    for (int i=0;i<12;++i)
     {
-        std::cout << s[0] << n[i] << s[1];
+        c s[0] << n[i] << s[1];
 
-        for (int j = i; j >= 0; --j)
+        for (int j=i;j>=0;--j)
         {
-            if (j == 0 && i > 0)
-                std::cout << "and ";
+            if (j==0&&i>0)c"and ";
 
-            std::cout << g[j];
+            c g[j];
+
+            if (j > 4) c"ing,\n";
         }
 
-        std::cout << std::endl;
+        c"\n";
     }
 }
