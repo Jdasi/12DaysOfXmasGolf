@@ -1,5 +1,5 @@
 #include<iostream>
-#define c std::cout <<
+#define c std::cout<<
 
 int main()
 {
@@ -8,7 +8,7 @@ int main()
 
     for (int i=0;i<12;++i)
     {
-        c"On the "<<n[i]<<" day of Christmas my true love sent to me\n";
+        c"\nOn the "<<n[i]<<" day of Christmas my true love sent to me\n";
 
         for (int j=i;j>=0;--j)
         {
@@ -20,7 +20,5 @@ int main()
 
             c"\n";
         }
-
-        c"\n";
     }
 }
