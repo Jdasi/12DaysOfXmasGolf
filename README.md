@@ -1,0 +1,2 @@
+This year’s challenge is to produce C++ code that writes the complete lyrics of the 12 days of Christmas out to the console: https://en.wikipedia.org/wiki/The_Twelve_Days_of_Christmas_(song) 
+(also days MUST words no numerical i.e. FIRST not 1st)
